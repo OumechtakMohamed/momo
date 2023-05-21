@@ -422,7 +422,7 @@ $RECYCLE.BIN/
 !.vscode/extensions.json
 
 # Ignorer le dossier .vs
-.vs/
+Cleemy.Back-Mohamed-Ou-Mechtak/ExpenseApp/.vs/
 
 # Ignorer les fichiers de solution
 *.sln
