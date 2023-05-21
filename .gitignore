@@ -427,3 +427,9 @@ $RECYCLE.BIN/
 # Ignorer les fichiers de solution
 *.sln
 
+# Ignorer le dossier .vs/ExpenseApp
+.vs/ExpenseApp/
+
+# Ignorer le dossier ExpenseApp.Test/bin/Debug
+ExpenseApp.Test/bin/Debug/
+
