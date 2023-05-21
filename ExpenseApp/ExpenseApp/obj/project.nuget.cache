@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BFsxZXx4tMeWWiwpUMl6WnAn+HuWwjbtKDVj1efOP15paESfezJS3Y4UtH9Lh4O2qh5V5+cWC8cRX6sRnsOL4A==",
+  "dgSpecHash": "fgcIqxehHYT6fdCE9UUhNPmmNGT68XQYPc3YmDdnjzncAl7Q4tIxjH/t5K2rogvlsFj0AifuL/YQs9ynNkqIAw==",
   "success": true,
-  "projectFilePath": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj",
+  "projectFilePath": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m.ou-mechtak\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\m.ou-mechtak\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

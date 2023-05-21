@@ -1,6 +1,7 @@
 using ExpenseApp.Models;
 using ExpenseApp.Repositories;
 using ExpenseApp.Services;
+using Microsoft.Extensions.Logging;
 using Moq;
 using System;
 using Xunit;
@@ -15,8 +16,9 @@ namespace ExpenseApp.Test
             // Arrange
             var expenseRepositoryMock = new Mock<IExpenseRepository>();
             var userRepositoryMock = new Mock<IUserRepository>();
+            var loggerMock = new Mock<ILogger<ExpenseService>>();
 
-            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object);
+            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object, loggerMock.Object);
 
             var expense = new Expense
             {
@@ -37,8 +39,9 @@ namespace ExpenseApp.Test
             // Arrange
             var expenseRepositoryMock = new Mock<IExpenseRepository>();
             var userRepositoryMock = new Mock<IUserRepository>();
+            var loggerMock = new Mock<ILogger<ExpenseService>>();
 
-            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object);
+            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object, loggerMock.Object);
 
             var expense = new Expense
             {
@@ -59,8 +62,9 @@ namespace ExpenseApp.Test
             // Arrange
             var expenseRepositoryMock = new Mock<IExpenseRepository>();
             var userRepositoryMock = new Mock<IUserRepository>();
+            var loggerMock = new Mock<ILogger<ExpenseService>>();
 
-            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object);
+            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object, loggerMock.Object);
 
             var expense = new Expense
             {
@@ -82,6 +86,7 @@ namespace ExpenseApp.Test
             // Arrange
             var expenseRepositoryMock = new Mock<IExpenseRepository>();
             var userRepositoryMock = new Mock<IUserRepository>();
+            var loggerMock = new Mock<ILogger<ExpenseService>>();
 
             var user = new User
             {
@@ -92,7 +97,7 @@ namespace ExpenseApp.Test
             userRepositoryMock.Setup(r => r.GetUserById(It.IsAny<int>()))
                 .Returns(user);
 
-            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object);
+            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object, loggerMock.Object);
 
             var expense = new Expense
             {
@@ -120,8 +125,9 @@ namespace ExpenseApp.Test
             // Arrange
             var expenseRepositoryMock = new Mock<IExpenseRepository>();
             var userRepositoryMock = new Mock<IUserRepository>();
+            var loggerMock = new Mock<ILogger<ExpenseService>>();
 
-            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object);
+            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object, loggerMock.Object);
 
             var user = new User
             {
@@ -153,8 +159,9 @@ namespace ExpenseApp.Test
             // Arrange
             var expenseRepositoryMock = new Mock<IExpenseRepository>();
             var userRepositoryMock = new Mock<IUserRepository>();
+            var loggerMock = new Mock<ILogger<ExpenseService>>();
 
-            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object);
+            var expenseService = new ExpenseService(expenseRepositoryMock.Object, userRepositoryMock.Object, loggerMock.Object);
 
             var user = new User
             {

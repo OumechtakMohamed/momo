@@ -20,6 +20,28 @@ Il convient de noter que même si l'architecture en une seule couche est choisie
 
 - **Architecture en plusieurs couches** : Dans cette approche, les responsabilités sont réparties entre différentes couches, telles que la couche de présentation (API ou interface utilisateur), la couche de services (logique métier) et la couche de données (accès aux données). Cette architecture offre une meilleure séparation des responsabilités et facilite la maintenance et l'évolutivité de l'application.
 
+Exemple de structure de projet pour une architecture en plusieurs couches :
+
+- ExpenseApp
+
+  - ExpenseApp.API
+    - Controllers
+    - Models
+    - Startup.cs
+  - ExpenseApp.Services
+    - Interfaces
+    - Implementations
+  - ExpenseApp.Repositories
+    - Interfaces
+    - Implementations
+  - ExpenseApp.Data
+    - Models
+    - DbContext
+  - ExpenseApp.Utilities
+    - Helpers
+    - Validators
+  - ExpenseApp.Tests
+
 - **Architecture orientée domaine (Domain-Driven Design - DDD)** : Le DDD est une approche où l'architecture est basée sur le domaine métier de l'application. Les concepts clés du domaine sont identifiés et modélisés en utilisant des entités, des agrégats, des services, etc. Cette approche met l'accent sur la compréhension approfondie du domaine métier et peut être bénéfique pour les applications complexes où la modélisation du domaine est cruciale.
 
 ...Etc

@@ -2,39 +2,45 @@
 using ExpenseApp.Repositories;
 using ExpenseApp.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace ExpenseApp
+public class Startup
 {
-    public class Startup
+    private readonly IConfiguration _configuration;
+
+    public Startup(IConfiguration configuration)
     {
-        public void ConfigureServices(IServiceCollection services)
+        _configuration = configuration;
+    }
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllers();
+
+        // Load connection string from appsettings.json
+        var connectionString = _configuration.GetConnectionString("ExpenseDb");
+
+        // Configure the ExpenseContext
+        services.AddDbContext<ExpenseContext>(options =>
+            options.UseSqlServer(connectionString));
+
+        // Register repositories
+        services.AddScoped<IUserRepository, UserRepository>();
+        services.AddScoped<IExpenseRepository, ExpenseRepository>();
+
+        // Register services
+        services.AddTransient<IUserService, UserService>();
+        services.AddTransient<IExpenseService, ExpenseService>();
+    }
+
+    public void Configure(IApplicationBuilder app)
+    {
+        app.UseRouting();
+
+        app.UseAuthorization();
+
+        app.UseEndpoints(endpoints =>
         {
-            services.AddControllers();
-
-            // Configure the ExpenseContext
-            services.AddDbContext<ExpenseContext>(options =>
-                options.UseSqlServer("Data Source=localhost;Initial Catalog=ExpenseDb;Integrated Security=True;TrustServerCertificate=True"));
-
-            // Register repositories
-            services.AddScoped<IUserRepository, UserRepository>();
-            services.AddScoped<IExpenseRepository, ExpenseRepository>();
-
-            // Register services
-            services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IExpenseService, ExpenseService>();
-        }
-
-        public void Configure(IApplicationBuilder app)
-        {
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-        }
+            endpoints.MapControllers();
+        });
     }
 }

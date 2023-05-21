@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj": {}
+    "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj": {}
   },
   "projects": {
-    "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj": {
+    "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj",
+        "projectUniqueName": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj",
         "projectName": "ExpenseApp.Test",
-        "projectPath": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj",
+        "projectPath": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\ExpenseApp.Test.csproj",
         "packagesPath": "C:\\Users\\m.ou-mechtak\\.nuget\\packages\\",
-        "outputPath": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\obj\\",
+        "outputPath": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\m.ou-mechtak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj": {
-                "projectPath": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj"
+              "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj": {
+                "projectPath": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj": {
+    "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj",
+        "projectUniqueName": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj",
         "projectName": "ExpenseApp",
-        "projectPath": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj",
+        "projectPath": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\ExpenseApp.csproj",
         "packagesPath": "C:\\Users\\m.ou-mechtak\\.nuget\\packages\\",
-        "outputPath": "C:\\projets\\v36\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\obj\\",
+        "outputPath": "C:\\projets\\v37\\Cleemy.Back-Mohamed-Ou-Mechtak\\ExpenseApp\\ExpenseApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\m.ou-mechtak\\AppData\\Roaming\\NuGet\\NuGet.Config",
