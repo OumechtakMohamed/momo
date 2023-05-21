@@ -421,4 +421,9 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Ignorer le dossier .vs
+.vs/
+
+# Ignorer les fichiers de solution
+*.sln
 
