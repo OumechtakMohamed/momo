@@ -27,7 +27,7 @@ namespace ExpenseApp.Repositories
         /// </summary>
         /// <param name="id">Identifiant de la dépense.</param>
         /// <returns>Dépense correspondant à l'identifiant.</returns>
-        Expense GetExpenseById(int id);
+        Expense? GetExpenseById(int id);
 
         /// <summary>
         /// Ajoute une nouvelle dépense.

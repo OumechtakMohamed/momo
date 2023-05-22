@@ -45,7 +45,7 @@ namespace ExpenseApp.Services
         {
             _logger.LogInformation("Getting expense with ID {id}", id);
 
-            Expense expense = _expenseRepository.GetExpenseById(id);
+            Expense? expense = _expenseRepository.GetExpenseById(id);
 
             if (expense == null)
             {

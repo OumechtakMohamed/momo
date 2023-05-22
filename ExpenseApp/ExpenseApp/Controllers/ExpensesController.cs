@@ -76,7 +76,7 @@ namespace ExpenseApp.Controllers
         {
             try
             {
-                User user = _userService.GetUserById(expenseViewModel.UserId);
+                User? user = _userService.GetUserById(expenseViewModel.UserId);
 
                 if (user == null)
                     return NotFound("L'utilisateur associé à la dépense n'existe pas.");
@@ -111,7 +111,7 @@ namespace ExpenseApp.Controllers
         [ProducesResponseType(404)]
         public IActionResult GetExpense(int id)
         {
-            Expense expense = _expenseService.GetExpenseById(id);
+            Expense? expense = _expenseService.GetExpenseById(id);
 
             if (expense == null)
             {
@@ -119,7 +119,7 @@ namespace ExpenseApp.Controllers
             }
 
             // Récupérer l'utilisateur associé à la dépense
-            User user = _userService.GetUserById(expense.UserId);
+            User? user = _userService.GetUserById(expense.UserId);
 
             if (user == null)
             {

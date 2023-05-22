@@ -15,8 +15,8 @@ END
 
 
 -- Insertion des dépenses
-INSERT INTO Expenses (UserId, ExpenseDate, Nature, Amount, Currency, Comment)
+INSERT INTO Expenses (UserId, Date, Nature, Amount, Currency, Comment)
 VALUES 
-    ((SELECT UserId FROM Users WHERE FirstName = 'Anthony' AND LastName = 'Stark'), '2023-05-20', 0, 50.00, 'Dollar américain', 'Déjeuner'),
-    ((SELECT UserId FROM Users WHERE FirstName = 'Natasha' AND LastName = 'Romanova'), '2023-05-21', 1, 100.00, 'Rouble russe', 'Hôtel'),
-    ((SELECT UserId FROM Users WHERE FirstName = 'Anthony' AND LastName = 'Stark'), '2023-05-22', 2, 20.00, 'Dollar américain', 'Achat en ligne');
+    ((SELECT Id FROM Users WHERE FirstName = 'Anthony' AND LastName = 'Stark'), '2023-05-20', 0, 50.00, 'Dollar américain', 'Déjeuner'),
+    ((SELECT Id FROM Users WHERE FirstName = 'Natasha' AND LastName = 'Romanova'), '2023-05-21', 1, 100.00, 'Rouble russe', 'Hôtel'),
+    ((SELECT Id FROM Users WHERE FirstName = 'Anthony' AND LastName = 'Stark'), '2023-05-22', 2, 20.00, 'Dollar américain', 'Achat en ligne');

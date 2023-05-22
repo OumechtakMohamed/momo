@@ -25,7 +25,7 @@ namespace ExpenseApp.Repositories
         }
 
         /// <inheritdoc />
-        public Expense GetExpenseById(int id)
+        public Expense? GetExpenseById(int id)
         {
             return _dbContext.Expenses.FirstOrDefault(e => e.Id == id);
         }
